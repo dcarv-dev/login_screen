@@ -48,10 +48,18 @@ section#login > div#form {
 div#form > h1 {
   text-align: center;
   margin-bottom: 14px;
+  font-size: 2em;
 }
 form > div.field {
+  padding: 4px;
   margin: 5px 0px;
   height: 40px;
+}
+div.field > input {
+  padding: 4px;
+  background-color: rgba(6, 6, 32, 0.838);
+  color: antiquewhite;
+  border: 1px solid antiquewhite;
 }
 form > input[type="submit"] {
   display: block;
