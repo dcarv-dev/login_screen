@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px){
+  body,
+  html {
+    background-image: linear-gradient(to bottom, rgba(6, 6, 32, 0.838) 60%, black);
+  }
+
+  section#login {
+    width: 90vw;
+  }
+  section#login > div#image {
+    float: left;
+    width: 30%;
+    height: 100%;
+  }
+  section#login > div#form {
+    float: right;
+    width: 70%;
+  }
+}
+@media screen and (min-width: 1200px) {
+    section#login > div#image {
+        float: right;
+        width: 30%;
+        height: 100%;
+      }
+      section#login {
+        width: 60vw;
+      }
+      section#login > div#form {
+        float: left;
+        width: 70%;
+      }
+      form > input[type="submit"], a.button {
+        width: 50%;
+        margin: auto;
+        margin-bottom: 12px;
+      }
+}

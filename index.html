@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css">
+  </head>
+  <body>
+    <main>
+      <section id="login">
+        <div id="image"></div>
+        <div id="form">
+          <h1>Welcome.</h1>
+          <form action="login.php" method="post">
+            <div class="field">
+                <input
+                type="email"
+                name="email"
+                placeholder="yourlittlesecret@xxxx.co"
+                minlength="5"
+                required
+                id="idemail"
+                />
+                <label for="idemail">E-mail</label>
+            </div>
+            <div class="field">
+                <input
+                type="password"
+                name="pass"
+                id="idpass"
+                placeholder="**********"
+                minlength="10"
+                required
+                />
+                <label for="idpass">Password</label>
+            </div>
+            <input class="button" type="submit" value="Take me there" />
+            <a class="button" href="">I don't have an account</a>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
