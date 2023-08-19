@@ -116,18 +116,18 @@ a.button:hover {
   transition: 0.5s;
 }
 
-footer {
+.footer {
   position: static;
   background-color: var(--bg-color);
 }
-footer p {
+.footer p {
   font-size: 1.5em;
 }
-footer a {
+.footer a {
   text-decoration: none;
   color: white;
 }
-footer a:hover {
+.footer a:hover {
   text-decoration: underline;
   transition: 0.5s;
 }
