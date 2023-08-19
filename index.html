@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bem-vindo</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css">
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
@@ -17,10 +18,11 @@
         <div id="form_login">
           <h1>Login</h1>
           <p>Faça login para acessar nossos serviços :)</p>
-          <form action="login.php">
+          <form action="login.php" autocomplete="on">
             <div class="campo">
               <label for="idemail"><i class="material-icons">person</i></label>
-              <input type="email" name="email" id="idemail" required />
+              <input type="email" name="email" id="idemail" required
+              placeholder="seu.email@xxxx.com" />
             </div>
             <div class="campo">
               <label for="idpass"><i class="material-icons">vpn_key</i></label>
@@ -30,6 +32,7 @@
                 id="idpass"
                 required
                 minlength="8"
+                placeholder="********"
               />
             </div>
             <input type="submit" value="Entrar" />

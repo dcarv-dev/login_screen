@@ -1,3 +1,4 @@
+/*GLOBAL (mobile-first)*/
 @charset "UTF-8";
 * {
   padding: 0;
@@ -18,7 +19,7 @@ section#login_screen {
   box-sizing: border-box;
   border: none;
   border-radius: 28px;
-  box-shadow: 0px 0px 2px var(--main-color);
+  box-shadow: 0px 0px 5px var(--main-color);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -28,6 +29,7 @@ section#login_screen {
   height: 550px;
   overflow: hidden;
   transform: translate(-50%, -50%);
+  transition: 0.3s;
 }
 div#img_login {
   height: 250px;
@@ -45,6 +47,7 @@ div#form_login {
 }
 #form_login p {
   margin-bottom: 12px;
+  font-weight: 300;
 }
 #form_login i {
   width: 40px;
@@ -104,14 +107,12 @@ a.button {
 
 form > input[type="submit"]:hover {
   background-color: var(--main-color);
-  border: 1px solid var(--input-field);
   cursor: pointer;
   transition: 0.5s;
 }
 
 a.button:hover {
   background-color: var(--main-color);
-  border: 1px solid var(--input-field);
   cursor: pointer;
   transition: 0.5s;
 }
@@ -121,7 +122,8 @@ a.button:hover {
   background-color: var(--bg-color);
 }
 .footer p {
-  font-size: 1.5em;
+  font-size: 1.2em;
+  color: var(--input-field);
 }
 .footer a {
   text-decoration: none;

@@ -1,0 +1,54 @@
+/*Query for tablets*/
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  section#login_screen {
+    width: 80vw;
+    height: 60%;
+  }
+
+  div#img_login {
+    float: right;
+    width: 45%;
+    height: 100%;
+  }
+  div#form_login {
+    float: left;
+    width: 50%;
+  }
+  #form_login h1 {
+    font-size: 2.5em;
+  }
+  #form_login p {
+    font-size: 1.2em;
+  }
+  form > input[type="submit"],
+  a.button {
+    transform: translateY(125px);
+  }
+}
+/*Query for desktops and bigger screens*/
+@media screen and (min-width: 992px) {
+  section#login_screen {
+    width: 80vw;
+    max-width: 1250px;
+  }
+  div#img_login {
+    float: right;
+    width: 45%;
+    height: 100%;
+  }
+  div#form_login {
+    float: left;
+    width: 50%;
+    height: auto;
+  }
+  #form_login h1 {
+    font-size: 3em;
+  }
+  #form_login p {
+    font-size: 1.5em;
+  }
+  form > input[type="submit"],
+  a.button {
+    transform: translateY(235px);
+  }
+}
