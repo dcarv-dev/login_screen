@@ -18,14 +18,14 @@ section#login_screen {
   box-sizing: border-box;
   border: none;
   border-radius: 28px;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.473);
+  box-shadow: 0px 0px 2px var(--main-color);
   position: absolute;
   top: 50%;
   left: 50%;
   background-color: #9c60d0;
   color: white;
   width: 300px;
-  height: 600px;
+  height: 550px;
   overflow: hidden;
   transform: translate(-50%, -50%);
 }
@@ -36,16 +36,15 @@ div#img_login {
 }
 div#form_login {
   display: block;
-  padding: 10px;
+  padding: 12px;
 }
 #form_login h1 {
   font-size: 2em;
-  text-align: center;
-  color: white;
+  color: var(--input-field);
+  font-weight: 600;
 }
 #form_login p {
   margin-bottom: 12px;
-  text-align: center;
 }
 #form_login i {
   width: 40px;
@@ -86,13 +85,14 @@ form > input[type="submit"] {
   font-size: 20px;
   background-color: var(--input-field);
   color: white;
+  margin-top: 12px;
   margin-bottom: 12px;
 }
 a.button {
   display: block;
   width: 100%;
   padding-top: 5px;
-  height: 40px;
+  height: 35px;
   text-align: center;
   border: none;
   border-radius: 8px;
@@ -100,12 +100,34 @@ a.button {
   background-color: #170126a2;
   color: white;
   text-decoration: none;
-
 }
 
 form > input[type="submit"]:hover {
   background-color: var(--main-color);
   border: 1px solid var(--input-field);
   cursor: pointer;
+  transition: 0.5s;
+}
+
+a.button:hover {
+  background-color: var(--main-color);
+  border: 1px solid var(--input-field);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+footer {
+  position: static;
+  background-color: var(--bg-color);
+}
+footer p {
+  font-size: 1.5em;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+footer a:hover {
+  text-decoration: underline;
   transition: 0.5s;
 }
